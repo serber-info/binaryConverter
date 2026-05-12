@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numbase-converter"
+version = "2.0.0"
+description = "Interactive number base converter — decimal, binary, hex and octal in one tool"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Sergio Berruetta" }]
+requires-python = ">=3.8"
+dependencies = ["shellcolorize"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage     = "https://github.com/serber-info/binaryConverter"
+"Bug Tracker" = "https://github.com/serber-info/binaryConverter/issues"
+"Source Code" = "https://github.com/serber-info/binaryConverter"
+
+[project.scripts]
+numbase = "numbase:main"
+
+[tool.setuptools]
+py-modules = ["numbase"]
